@@ -1,0 +1,28 @@
+{
+  "template": "booktown*",
+  "mappings": {
+    "books": {
+      "properties": {
+        "Books": {
+          "properties": {
+            "id": {
+              "type": "long"
+            },
+            "subject_id": {
+              "type": "long"
+            },
+            "title": {
+              "type": "string"
+            }
+          }
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

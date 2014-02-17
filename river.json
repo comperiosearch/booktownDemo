@@ -1,0 +1,13 @@
+{
+          "type" : "jdbc",
+          "jdbc" : {
+              "driver" : "org.postgresql.Driver",
+              "url" : "jdbc:postgresql://localhost:5432/booktown",
+              "user" : "postgres",
+              "password" : "postgres",
+              "index" : "booktown_1",
+              "type" : "books",
+              "sql" : "SELECT    authors.id as _id,    authors.last_name,    authors.first_name,    books.id as \"Books.id\",    books.title as \"Books.title\",    books.subject_id as \"Books.subject_id\" FROM    public.authors left join     public.books on     books.author_id = authors.id   order by authors.id "
+              
+          }
+     }
