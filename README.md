@@ -3,7 +3,7 @@
 
 Download and install 
 
-- [elasticsearch 1.0.0.RC1](http://www.elasticsearch.org/downloads/1-0-0-rc1/)
+- [elasticsearch 1.0.0](http://www.elasticsearch.org/overview/elkdownloads/)
 
 - [postgresql](http://www.postgresql.org/download/)
  
@@ -21,7 +21,7 @@ http://www.postgresql.org/download/
 Install the  [river-jdbc elasticsearch plugin](https://github.com/jprante/elasticsearch-river-jdbc)
 
 
-	./bin/plugin -install river-jdbc -url http://bit.ly/1dKqNJy (ES 1.0.0.RC1)
+	./bin/plugin --install river-jdbc --url http://bit.ly/1jyXrR9 (ES 1.0.0)
 
 
 ### Download postgres jdbc driver jar

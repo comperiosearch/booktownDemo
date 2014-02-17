@@ -21,7 +21,7 @@ def main():
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', filename='reindx.log')
     from os import listdir
     from os.path import isfile, join
-    if es.indices.exists(ex_index) == True:
+    if es.indices.exists(es_index) == True:
         es.indices.delete(es_index)
     es.indices.create(es_index)
     mapping = json.loads(open("index-template.json", "r").read())
@@ -30,6 +30,5 @@ def main():
     from elasticsearch.transport import Transport
     river = json.loads(open("river.json", "r").read())
     es.transport.perform_request('PUT', '/_river/' + es_alias + '/_meta', body=river  )
-    
 if __name__ == '__main__':
     main()
